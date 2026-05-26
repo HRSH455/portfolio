@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
 
 const roles = [
+  "full stack developer",
   "backend engineer",
   "spring boot developer",
   "angular developer",

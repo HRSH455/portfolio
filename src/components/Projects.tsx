@@ -43,6 +43,34 @@ const projects = [
       { key: "pattern", val: "Version locking" },
     ],
   },
+  {
+    id: "04",
+    name: "Microservices Shop",
+    tagline: "5-service cloud-native architecture on Kubernetes",
+    desc: "Production-grade microservices system with API gateway, event-driven Kafka notifications, and per-service databases (MongoDB + MySQL). Full observability stack: Prometheus, Grafana, Loki, and Tempo. Deployed on kind with Kustomize overlays and secured via Keycloak OAuth2/OIDC.",
+    stack: ["Spring Boot 3.4", "Kubernetes", "Kafka", "Keycloak", "Angular", "Grafana"],
+    links: { live: "#", github: "https://github.com/HRSH455/SpringBoot_microservices" },
+    status: "archived",
+    metrics: [
+      { key: "services", val: "5" },
+      { key: "auth", val: "Keycloak" },
+      { key: "tracing", val: "Tempo" },
+    ],
+  },
+  {
+    id: "05",
+    name: "Spring AI RAG",
+    tagline: "Retrieval-augmented generation with local LLMs",
+    desc: "Spring Boot RAG pipeline that ingests PDFs on startup, embeds them via nomic-embed-text, and stores vectors in PGVector. Chat API answers questions by retrieving semantically similar chunks and prompting Mistral via Ollama — fully local, no cloud API calls.",
+    stack: ["Spring Boot 3.4", "Spring AI 1.1", "Ollama", "PGVector", "Docker Compose"],
+    links: { live: "#", github: "#" },
+    status: "archived",
+    metrics: [
+      { key: "model", val: "Mistral" },
+      { key: "vector DB", val: "PGVector" },
+      { key: "embed", val: "768-dim" },
+    ],
+  }
 ];
 
 export default function Projects() {
