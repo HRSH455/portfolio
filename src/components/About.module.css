@@ -1,0 +1,133 @@
+.about {
+  padding: 6rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bio {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+}
+
+.hi {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 1.25rem;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.cardRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cardRow:first-child {
+  padding-top: 0;
+}
+
+.key {
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.val {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+}
+
+.cardHeader {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.learnItem {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 0.3rem 0;
+}
+
+.arrow {
+  color: var(--accent);
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .about { padding: 4rem 1.25rem; }
+  .body { grid-template-columns: 1fr; gap: 2.5rem; }
+}

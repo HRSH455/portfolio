@@ -1,0 +1,137 @@
+.contact {
+  padding: 6rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.heading {
+  font-family: var(--mono);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.dim {
+  color: var(--text-muted);
+  -webkit-text-stroke: 1px var(--border-bright);
+}
+
+.desc {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.5rem;
+}
+
+.emailLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.emailLink:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim2);
+}
+
+.emailLabel {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.emailAddr {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.socials {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+}
+
+.social {
+  flex: 1;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  padding: 0.9rem 1rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  letter-spacing: 0.06em;
+  transition: color 0.15s, background 0.15s;
+}
+
+.social:last-child {
+  border-right: none;
+}
+
+.social:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.slash {
+  color: var(--accent);
+  margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+  .contact { padding: 4rem 1.25rem; }
+  .body { grid-template-columns: 1fr; gap: 2.5rem; }
+}
