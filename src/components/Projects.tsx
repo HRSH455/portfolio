@@ -63,7 +63,7 @@ const projects = [
     tagline: "Retrieval-augmented generation with local LLMs",
     desc: "Spring Boot RAG pipeline that ingests PDFs on startup, embeds them via nomic-embed-text, and stores vectors in PGVector. Chat API answers questions by retrieving semantically similar chunks and prompting Mistral via Ollama — fully local, no cloud API calls.",
     stack: ["Spring Boot 3.4", "Spring AI 1.1", "Ollama", "PGVector", "Docker Compose"],
-    links: { live: "#", github: "#" },
+    links: { live: "#", github: "https://github.com/HRSH455/springboot-rag-ollama" },
     status: "archived",
     metrics: [
       { key: "model", val: "Mistral" },
